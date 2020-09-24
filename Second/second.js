@@ -21,3 +21,5 @@ function all_combinations(array){
     }
     return answer;
 }
+
+module.exports.all_combinations = all_combinations;

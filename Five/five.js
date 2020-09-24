@@ -7,3 +7,5 @@ function Find (str) {
     }
     return max_w;
 }
+
+module.exports.Find = Find;
