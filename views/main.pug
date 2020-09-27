@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        title= title
+    body
+        h2 Tasks
+        ul
+            for num in [2,5,15]
+                li
+                    a(href = "/api/GudkovNikita/lab1/" + num) Task #{num}
+
+        hr
+
+include footer.pug
