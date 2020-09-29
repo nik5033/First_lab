@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        title= title
+    body
+        h2 #{title}
+        ul
+            form
+                p #{msg}
+                    label
+                    input(name= input type="text")
+                    button(type="submit") Send
+        hr
+
+include footer.pug
