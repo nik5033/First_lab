@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        title #{title}
+        link(href="/style.css" rel="stylesheet" type="text/css")
+    body
+        h2(align="center") #{title}
+        ul
+            form(class = "input")
+                p #{msg}
+                    label
+                    input(name= input type="text" placeholder=input)
+                    button(type="submit") Send
+
+include footer.pug
