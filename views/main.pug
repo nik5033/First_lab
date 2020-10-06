@@ -2,13 +2,16 @@ doctype html
 html
     head
         title= title
-    body
+        link(href="/style.css" rel="stylesheet" type="text/css")
+    body(class = "main")
         h2 Tasks
         ul
-            for num in [2,5,15]
+            for num in numbers
                 li
-                    a(href = "/api/GudkovNikita/lab1/" + num) Task #{num}
-
-        hr
+                    p
+                    a(class = "task" href = "/api/GudkovNikita/lab1/" + num) Task #{num}
+        p For some task you need to be an admin.
+        p
+        a(href = "auth" ) Authorization
 
 include footer.pug
