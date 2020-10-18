@@ -1,18 +1,18 @@
 doctype html
 html
     head
-        title Authorization
+        title #{title}
         link(href="/style.css" rel="stylesheet" type="text/css")
     body
         h3(align="center") Please, enter your login and password
         ul
-            form(class = "auth")
+            form(class = "auth" method='post' action=auth)
                 p
                     label(for = login)
                     input(name="login" type="login" placeholder="Login")
                 p
                     label(for = passwd)
-                    input(name="passwd" type="password" placeholder="Password")
+                    input(name="password" type="password" placeholder="Password")
                 p
                     button(type="submit") Send
 

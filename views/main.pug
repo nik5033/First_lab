@@ -5,13 +5,15 @@ html
         link(href="/style.css" rel="stylesheet" type="text/css")
     body(class = "main")
         h2 Tasks
-        ul
-            for num in numbers
-                li
-                    p
-                    a(class = "task" href = "/api/GudkovNikita/lab1/" + num) Task #{num}
-        p For some task you need to be an admin.
-        p
-        a(href = "auth" ) Authorization
+        div(class='task')
+            ul
+                for num in numbers
+                    li
+                        p
+                        a(href = "/api/GudkovNikita/lab1/" + num) Task #{num}
+        div(class='log_reg')
+            a(href = "login" ) Login
+            p
+            a(href='register') Sign up
 
 include footer.pug
